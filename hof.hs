@@ -1,4 +1,6 @@
 
+{- Funciones de Orden Superior -}
+
 -- 1.	Usando listas por comprensión.
 
 filterC :: (a -> Bool) -> [a] -> [a]
