@@ -23,10 +23,10 @@ data Suit =  Clubs | Diamonds | Spades | Hearts deriving (Eq)
 --- Hay que colocar los caracteres especiales, en windows no sirve 
 
 instance Show Suit where 
-	show Clubs      =    "C"
-	show Diamonds   =    "D"
-	show Spades     =    "S"		 
-	show Hearts     =    "H"
+	show Clubs      =    "♣"
+	show Diamonds   =    "♦"
+	show Spades     =    "♠"		 
+	show Hearts     =    "♥"
 
 --- Valor de la carta -----------------------------------------------
 
