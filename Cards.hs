@@ -23,7 +23,7 @@ data Suit =  Clubs | Diamonds | Spades | Hearts deriving (Eq)
 
 --- Hay que colocar los caracteres especiales, en windows no sirve 
 
-iinstance Show Suit where 
+instance Show Suit where 
 	show Clubs      =    "♣"
 	show Diamonds   =    "♦"
 	show Spades     =    "♠" 

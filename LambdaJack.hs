@@ -66,9 +66,9 @@ continuePlaying = do
 cPlaying :: IO Bool
 cPlaying = do
 	c <-getChar
-	if c == 'y' then 
+	if (c == 'y')||(c == 'Y') then 
 		return True
-		else if c == 'n' then
+		else if (c == 'n')||(c == 'N') then
 			return False
 			else if c /= '\n' then do 
 				putStrLn "Caracter invalido, responda con 'y' (yes) o 'n' (no)"
@@ -110,9 +110,9 @@ dCycle d h s j =
 	let val = draw d h 
 	in do
 		c <- getChar
-		if c == 'c' then
+		if (c == 'c')||(c == 'C') then
 			drawCycle (fM val) (sM val) s
-			else if c == 'l' then do
+			else if (c == 'l')||(c == 'L') then do
 				putStrLn "Mi turno."
 				return (d,h)
 				else if c /= '\n' then do 
