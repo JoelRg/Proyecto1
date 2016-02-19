@@ -41,7 +41,7 @@ generator :: StdGen
 welcome :: IO String 
 welcome = do
 	putStrLn "Bienvenido a LambdaJack"
-	putStr "Escriba su nombre: "
+	putStrLn "Escriba su nombre: "
 	w <- getLine
 	return w
 	
@@ -60,7 +60,7 @@ currentState (GS g l n gen) = do
 	
 continuePlaying :: IO Bool
 continuePlaying = do
-	putStr "¿Desea seguir jugando? (y/n): "
+	putStrLn "¿Desea seguir jugando? (y/n): "
 	cPlaying
 
 cPlaying :: IO Bool
