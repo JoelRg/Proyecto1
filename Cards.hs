@@ -35,11 +35,11 @@ data Value = Numeric Int | Jack | Queen | King | Ace deriving (Eq)
 
 
 instance Show Value where 
-	show (Numeric a)        =    (show a)
-	show Jack               =    "J"
-	show Queen              =    "Q"		 
-	show King               =    "K" 
-	show Ace                =    "A"
+	show (Numeric a)        =    " "++(show a)++" "
+	show Jack               =    " J "
+	show Queen              =    " Q "		 
+	show King               =    " K " 
+	show Ace                =    " A "
 
 --- Mano (Hand) -----------------------------------------------------
 
